@@ -36,6 +36,9 @@ dependencies {
 
 	// H2 Database 라이브러리
 	compile('com.h2database:h2')
+	
+    // 스프링 부트 개발 툴(클래스 자동 리로더 등)
+	runtime('org.springframework.boot:spring-boot-devtools')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.jsonpath:json-path')
