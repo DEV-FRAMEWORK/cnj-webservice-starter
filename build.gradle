@@ -27,6 +27,16 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+
+    // Database 연결 드라이브 설정
+    compile('org.springframework.boot:spring-boot-starter-jdbc')
+
+	// Database 초기화 및 JPA 라이브러리
+	compile("org.springframework.boot:spring-boot-starter-data-jpa")
+
+	// H2 Database 라이브러리
+	compile('com.h2database:h2')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.jsonpath:json-path')
 }
